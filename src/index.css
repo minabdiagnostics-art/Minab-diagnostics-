@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .medical-gradient {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  }
+
+  .logo-pattern-bg {
+    background-color: #f8fafc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='0.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.03'%3E%3Cpath d='M6 18h8'/%3E%3Cpath d='M3 22h18'/%3E%3Cpath d='M14 22a7 7 0 1 0-14 0'/%3E%3Ccircle cx='14' cy='5' r='2'/%3E%3Cpath d='m12.9 14.3-.7 1.7'/%3E%3Cpath d='M10 18v-4.5h4'/%3E%3Cpath d='m15.7 14.9 1.5-1'/%3E%3Cpath d='m21 19-3-4'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+}
